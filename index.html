@@ -5,22 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prince Gian Constantino | Developer Portfolio</title>
   <style>
-    body { max-width: 860px; margin: 0 auto; padding: 24px; font: 17px/1.6 Arial, sans-serif; color: #172235; }
-    header, footer { background: #eaf2fa; padding: 22px; border-radius: 12px; }
-    nav a { margin-right: 16px; color: #174b83; }
-    section { padding: 12px 0; border-bottom: 1px solid #d8e0e8; }
-    img { max-width: 100%; border-radius: 12px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #aebdcc; padding: 8px; text-align: left; }
-    label { display: block; margin-top: 12px; }
-    input, textarea { display: block; width: min(100%, 440px); padding: 8px; box-sizing: border-box; }
-    button { margin-top: 12px; padding: 9px 16px; }
+    :root { --ink:#17212b; --muted:#5d6972; --accent:#176b65; --line:#dfe5e5; --paper:#fbfcfa; --soft:#eef5f2; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { max-width:1020px; margin:0 auto; padding:0 28px; background:var(--paper); color:var(--ink); font:16px/1.65 system-ui,Segoe UI,sans-serif; }
+    header { padding:65px 0 42px; border-bottom:1px solid var(--line); }
+    h1 { font-size:clamp(40px,6vw,68px); line-height:1.07; letter-spacing:-.05em; margin:0 0 16px; }
+    header p { max-width:680px; color:var(--muted); font-size:19px; }
+    nav { display:flex; flex-wrap:wrap; gap:18px; margin-top:27px; }
+    nav a { color:var(--accent); text-decoration:none; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:48px 0; border-bottom:1px solid var(--line); }
+    h2 { font-size:28px; letter-spacing:-.03em; margin:0 0 18px; }
+    section p { color:var(--muted); max-width:750px; }
+    #about img { display:block; width:100%; max-width:500px; height:auto; border-radius:12px; border:1px solid var(--line); margin:20px 0; }
+    ul { display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; }
+    ul li { background:white; border:1px solid var(--line); border-radius:100px; padding:7px 14px; }
+    table { border-collapse:collapse; width:100%; max-width:680px; background:white; }
+    th,td { border-bottom:1px solid var(--line); padding:12px 15px; text-align:left; }
+    article { display:inline-block; vertical-align:top; width:calc(50% - 12px); min-height:175px; background:white; border:1px solid var(--line); border-radius:10px; padding:23px; margin:0 12px 12px 0; }
+    article h3 { margin:0 0 8px; } article p { margin:0; }
+    #contact form { max-width:480px; } #contact label { display:block; font-weight:600; margin:14px 0 5px; }
+    input,textarea { display:block; width:100%; padding:10px; border:1px solid #bfcfc9; border-radius:6px; background:white; font:inherit; }
+    button { margin-top:14px; padding:10px 17px; background:var(--accent); color:white; border:0; border-radius:6px; font:inherit; }
+    footer { color:var(--muted); padding:25px 0; font-size:14px; }
+    @media(max-width:650px) { article { width:100%; } header { padding-top:45px; } }
   </style>
 </head>
 <body>
   <header id="home">
     <h1>Prince Gian Constantino</h1>
-    <p>Developer Portfolio | BSIT student interested in coding, robotics, and web development</p>
+    <p>BSIT student building useful things for the web. Interested in coding, robotics, and thoughtful website design.</p>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -32,7 +46,7 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <img src="profile.svg" alt="Illustrated portrait placeholder with the initials PGC" width="150" height="150">
+      <img src="web-illustration.svg" alt="Illustration of two simple website layouts" width="500" height="365">
       <p>Hi, I am Prince Gian Constantino, a second-year BSIT student at National University Fairview. I enjoy coding, robotics, and making websites. I have worked on a caregiving services website for our company and an ITSO website for a final project last semester.</p>
     </section>
     <section id="skills">
